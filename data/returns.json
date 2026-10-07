@@ -1,0 +1,17 @@
+{
+  "basis": "2026 year-to-date total return, %, from 31 Dec 2025 close",
+  "method": "web-search",
+  "note": "Gathered via web search because market-data APIs are blocked in this environment. Replace with fetch_twelvedata.py output when the host is reachable.",
+  "tickers": {
+    "SPY": {"low": 15.14, "high": 15.14, "as_of": "2026-10-06", "confidence": "high", "sources": ["https://www.financecharts.com/etfs/SPY/performance/total-return", "https://www.etfreplay.com/etf/spy"]},
+    "QQQ": {"low": 23.51, "high": 24.08, "as_of": "2026-10-06", "confidence": "high", "sources": ["https://finance.yahoo.com/quote/QQQ/performance/", "https://totalrealreturns.com/n/QQQ"]},
+    "IWM": {"low": 14.4, "high": 15.14, "as_of": "2026-10-02", "confidence": "medium", "sources": ["https://finance.yahoo.com/quote/IWM/performance/", "https://chartrow.com/russell-2000"]},
+    "XLV": {"low": 9.45, "high": 11.65, "as_of": "2026-10-06", "confidence": "medium", "sources": ["https://finance.yahoo.com/quote/XLV/", "https://finance.yahoo.com/quote/XLV/performance/"]},
+    "XLI": {"low": 9.66, "high": 11.49, "as_of": "2026-10-05", "confidence": "medium", "sources": ["https://finance.yahoo.com/quote/XLI/performance/", "https://gurufocus.com/news/9112925/state-street-industrial-select-sector-spdr-xli-adds-cat-and-ge-on-oct-5"]},
+    "XLE": {"low": 38.9, "high": 40.5, "as_of": "2026-10-02", "confidence": "medium", "sources": ["https://chartrow.com/sp500/sector-performance"]},
+    "XLF": {"low": -1.32, "high": 2.9, "as_of": "2026-10-02", "confidence": "low", "sources": ["https://finance.yahoo.com/quote/XLF/performance/", "https://www.dividend.com/etfs/xlf-financial-select-sector-spdr-etf/"]},
+    "XLU": {"low": -4.8, "high": -4.42, "as_of": "2026-10-06", "confidence": "low", "sources": ["https://finance.yahoo.com/quote/XLU/performance/", "https://portfolioslab.com/symbol/XLU", "https://www.dividend.com/etfs/xlu-utilities-select-sector-spdr-etf/"]},
+    "KBE": {"low": 7.83, "high": 7.84, "as_of": "2026-10-02", "confidence": "medium", "sources": ["https://finance.yahoo.com/quote/KBE/", "https://etfdb.com/etf/KBE/"]},
+    "HYG": {"low": -0.2, "high": 0.13, "as_of": "2026-10-06", "confidence": "high", "sources": ["https://www.ishares.com/us/products/239565/ishares-iboxx-high-yield-corporate-bond-etf", "https://finance.yahoo.com/quote/HYG/performance/"]}
+  }
+}

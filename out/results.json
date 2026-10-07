@@ -1,0 +1,258 @@
+[
+  {
+    "id": "consensus-spx",
+    "who": "Street consensus",
+    "call": "US large caps up ~11% in 2026",
+    "thesis": "S&P 500 EPS growth ~13% in 2026; earnings, not multiples, drive returns",
+    "quote": "В среднем аналитики ждут роста американского рынка примерно на 11%",
+    "track": [
+      "SPY"
+    ],
+    "benchmark": {
+      "target": 11.0
+    },
+    "ret": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "ref": {
+      "low": 11.0,
+      "high": 11.0
+    },
+    "excess_low": 4.140000000000001,
+    "excess_high": 4.140000000000001,
+    "status": "On track"
+  },
+  {
+    "id": "small-caps",
+    "who": "\"Many on Wall Street\", GS Asset Management",
+    "call": "Small caps outperform",
+    "thesis": "Falling rates plus growth; capital rotating out of overheated mega-caps",
+    "quote": "многие на Уолл-стрит рассчитывают, что именно они могут обгонять рынок в следующем году",
+    "track": [
+      "IWM"
+    ],
+    "benchmark": {
+      "ticker": "SPY"
+    },
+    "ret": {
+      "low": 14.4,
+      "high": 15.14,
+      "confidence": "medium"
+    },
+    "ref": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "excess_low": -0.7400000000000002,
+    "excess_high": 0.0,
+    "status": "Too close to call"
+  },
+  {
+    "id": "rotation",
+    "who": "Wall Street broadly",
+    "call": "Rotate into healthcare, industrials, energy, financials",
+    "thesis": "Less crowded, cheaper segments than mega-cap tech",
+    "quote": "переключаться на менее популярные сегменты — здравоохранение, промышленность, энергетику и финансы",
+    "track": [
+      "XLV",
+      "XLI",
+      "XLE",
+      "XLF"
+    ],
+    "benchmark": {
+      "ticker": "SPY"
+    },
+    "ret": {
+      "low": 14.1725,
+      "high": 16.635,
+      "confidence": "low"
+    },
+    "ref": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "excess_low": -0.9675000000000011,
+    "excess_high": 1.495000000000001,
+    "status": "Too close to call"
+  },
+  {
+    "id": "gs-equities-over-credit",
+    "who": "Goldman Sachs Research",
+    "call": "Prefer US equities over US credit",
+    "thesis": "Not a bubble; positive cyclical news beats high valuations; tight spreads make credit asymmetry unattractive",
+    "quote": "узкие кредитные спреды делают асимметрию в американском кредитном рынке менее привлекательной по сравнению с акциями",
+    "track": [
+      "SPY"
+    ],
+    "benchmark": {
+      "ticker": "HYG"
+    },
+    "ret": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "ref": {
+      "low": -0.2,
+      "high": 0.13,
+      "confidence": "high"
+    },
+    "excess_low": 15.01,
+    "excess_high": 15.34,
+    "status": "On track"
+  },
+  {
+    "id": "pimco-value",
+    "who": "PIMCO",
+    "call": "Value over growth",
+    "thesis": "Fed cuts favour value; plenty of cheap stocks with sound balance sheets",
+    "quote": "Макроэкономическая конъюнктура в ближайшей перспективе будет способствовать росту стоимостных акций",
+    "track": [
+      "IWD"
+    ],
+    "benchmark": {
+      "ticker": "IWF"
+    },
+    "status": "No data",
+    "missing": [
+      "IWD",
+      "IWF"
+    ]
+  },
+  {
+    "id": "ubs-healthcare",
+    "who": "UBS",
+    "call": "Overweight US healthcare",
+    "thesis": "Policy clarity on drug pricing and pharma tariffs; obesity market; low earnings correlation",
+    "quote": "Сектор здравоохранения выходит из периода политической неопределенности",
+    "track": [
+      "XLV"
+    ],
+    "benchmark": {
+      "ticker": "SPY"
+    },
+    "ret": {
+      "low": 9.45,
+      "high": 11.65,
+      "confidence": "medium"
+    },
+    "ref": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "excess_low": -5.690000000000001,
+    "excess_high": -3.49,
+    "status": "Off track"
+  },
+  {
+    "id": "ubs-utilities",
+    "who": "UBS",
+    "call": "Overweight US utilities",
+    "thesis": "AI data-centre power demand; 18% discount to S&P 500; 2.7% dividend yield",
+    "quote": "Американские коммунальные компании выигрывают от растущего спроса на энергию",
+    "track": [
+      "XLU"
+    ],
+    "benchmark": {
+      "ticker": "SPY"
+    },
+    "ret": {
+      "low": -4.8,
+      "high": -4.42,
+      "confidence": "low"
+    },
+    "ref": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "excess_low": -19.94,
+    "excess_high": -19.560000000000002,
+    "status": "Off track"
+  },
+  {
+    "id": "ubs-banks",
+    "who": "UBS",
+    "call": "Overweight banks",
+    "thesis": "Well capitalised, ROE 11.5% and rising, net interest margin, lending and deregulation",
+    "quote": "Банковский сектор — в США и глобально — находится в сильной позиции",
+    "track": [
+      "KBE"
+    ],
+    "benchmark": {
+      "ticker": "SPY"
+    },
+    "ret": {
+      "low": 7.83,
+      "high": 7.84,
+      "confidence": "medium"
+    },
+    "ref": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "excess_low": -7.3100000000000005,
+    "excess_high": -7.300000000000001,
+    "status": "Off track"
+  },
+  {
+    "id": "hsbc-broadening",
+    "who": "HSBC",
+    "call": "Add utilities, financials, industrials",
+    "thesis": "Reduce tech concentration; power demand, AI efficiency, reshoring and defence",
+    "quote": "Коммунальные компании находятся в выгодной позиции ... финансовый сектор ... промышленный сектор",
+    "track": [
+      "XLU",
+      "XLF",
+      "XLI"
+    ],
+    "benchmark": {
+      "ticker": "SPY"
+    },
+    "ret": {
+      "low": 1.18,
+      "high": 3.3233333333333337,
+      "confidence": "low"
+    },
+    "ref": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "excess_low": -13.96,
+    "excess_high": -11.816666666666666,
+    "status": "Off track"
+  },
+  {
+    "id": "ai-exposure",
+    "who": "BlackRock, Apollo, UBS",
+    "call": "Stay exposed to AI",
+    "thesis": "AI remains the key driver of US equities in 2026",
+    "quote": "AI останется ключевым драйвером американского фондового рынка в 2026 году",
+    "track": [
+      "QQQ"
+    ],
+    "benchmark": {
+      "ticker": "SPY"
+    },
+    "ret": {
+      "low": 23.51,
+      "high": 24.08,
+      "confidence": "high"
+    },
+    "ref": {
+      "low": 15.14,
+      "high": 15.14,
+      "confidence": "high"
+    },
+    "excess_low": 8.370000000000001,
+    "excess_high": 8.939999999999998,
+    "status": "On track"
+  }
+]

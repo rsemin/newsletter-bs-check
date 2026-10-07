@@ -1,0 +1,20 @@
+{
+  "source": {
+    "publisher": "Bell.Инвестиции (The Bell)",
+    "title": "Во что крупнейшие инвестбанки рекомендуют инвестировать в 2026 году",
+    "published": "2025-12-26",
+    "horizon": "calendar 2026"
+  },
+  "recommendations": [
+    {"id": "consensus-spx", "who": "Street consensus", "call": "US large caps up ~11% in 2026", "thesis": "S&P 500 EPS growth ~13% in 2026; earnings, not multiples, drive returns", "quote": "В среднем аналитики ждут роста американского рынка примерно на 11%", "track": ["SPY"], "benchmark": {"target": 11.0}},
+    {"id": "small-caps", "who": "\"Many on Wall Street\", GS Asset Management", "call": "Small caps outperform", "thesis": "Falling rates plus growth; capital rotating out of overheated mega-caps", "quote": "многие на Уолл-стрит рассчитывают, что именно они могут обгонять рынок в следующем году", "track": ["IWM"], "benchmark": {"ticker": "SPY"}},
+    {"id": "rotation", "who": "Wall Street broadly", "call": "Rotate into healthcare, industrials, energy, financials", "thesis": "Less crowded, cheaper segments than mega-cap tech", "quote": "переключаться на менее популярные сегменты — здравоохранение, промышленность, энергетику и финансы", "track": ["XLV", "XLI", "XLE", "XLF"], "benchmark": {"ticker": "SPY"}},
+    {"id": "gs-equities-over-credit", "who": "Goldman Sachs Research", "call": "Prefer US equities over US credit", "thesis": "Not a bubble; positive cyclical news beats high valuations; tight spreads make credit asymmetry unattractive", "quote": "узкие кредитные спреды делают асимметрию в американском кредитном рынке менее привлекательной по сравнению с акциями", "track": ["SPY"], "benchmark": {"ticker": "HYG"}},
+    {"id": "pimco-value", "who": "PIMCO", "call": "Value over growth", "thesis": "Fed cuts favour value; plenty of cheap stocks with sound balance sheets", "quote": "Макроэкономическая конъюнктура в ближайшей перспективе будет способствовать росту стоимостных акций", "track": ["IWD"], "benchmark": {"ticker": "IWF"}},
+    {"id": "ubs-healthcare", "who": "UBS", "call": "Overweight US healthcare", "thesis": "Policy clarity on drug pricing and pharma tariffs; obesity market; low earnings correlation", "quote": "Сектор здравоохранения выходит из периода политической неопределенности", "track": ["XLV"], "benchmark": {"ticker": "SPY"}},
+    {"id": "ubs-utilities", "who": "UBS", "call": "Overweight US utilities", "thesis": "AI data-centre power demand; 18% discount to S&P 500; 2.7% dividend yield", "quote": "Американские коммунальные компании выигрывают от растущего спроса на энергию", "track": ["XLU"], "benchmark": {"ticker": "SPY"}},
+    {"id": "ubs-banks", "who": "UBS", "call": "Overweight banks", "thesis": "Well capitalised, ROE 11.5% and rising, net interest margin, lending and deregulation", "quote": "Банковский сектор — в США и глобально — находится в сильной позиции", "track": ["KBE"], "benchmark": {"ticker": "SPY"}},
+    {"id": "hsbc-broadening", "who": "HSBC", "call": "Add utilities, financials, industrials", "thesis": "Reduce tech concentration; power demand, AI efficiency, reshoring and defence", "quote": "Коммунальные компании находятся в выгодной позиции ... финансовый сектор ... промышленный сектор", "track": ["XLU", "XLF", "XLI"], "benchmark": {"ticker": "SPY"}},
+    {"id": "ai-exposure", "who": "BlackRock, Apollo, UBS", "call": "Stay exposed to AI", "thesis": "AI remains the key driver of US equities in 2026", "quote": "AI останется ключевым драйвером американского фондового рынка в 2026 году", "track": ["QQQ"], "benchmark": {"ticker": "SPY"}}
+  ]
+}
