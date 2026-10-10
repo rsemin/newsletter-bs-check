@@ -88,7 +88,7 @@ def add_newsletter(nl: dict) -> tuple[str, bool]:
     with connect() as c:
         inserted = c.one(
             """INSERT INTO newsletters (id, natural_key, publisher, title, published, baseline, created_at)
-               VALUES (?, ?, ?, ?, ?, ?, ?)""",
+               VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT (natural_key) DO NOTHING RETURNING id""",
             (nid, key, nl["publisher"], nl["title"], nl["published"], nl["baseline"], now()),
         )
         if not inserted:
