@@ -52,16 +52,11 @@ newsletter ─► recommendations.json ─► returns.json ─► score.py ─�
 
 ## Next steps
 
-1. Move to its own repo (see the transfer plan below).
-2. Add a Twelve Data key, allow `api.twelvedata.com`, and run `fetch_twelvedata.py` for exact returns.
-3. Add price charts and the worst fall along the way, from daily closes.
-4. Automate extraction and explanations with the Claude API (structured output per newsletter).
-5. Run the remaining newsletters through the pipeline; then add Gmail ingestion.
+1. Add a Twelve Data key, allow `api.twelvedata.com`, and run `fetch_twelvedata.py` for exact returns.
+2. Add price charts and the worst fall along the way, from daily closes.
+3. Automate extraction and explanations with the Claude API (structured output per newsletter).
+4. Run the remaining newsletters through the pipeline; then add Gmail ingestion.
 
-## Transfer plan
+## Repo history
 
-1. Create an empty private repo (e.g. `rsemin/rec-tracker`) and give the Claude GitHub App access.
-2. `git subtree split --prefix rec-tracker -b rec-tracker-export`, then push that branch to the new repo's `main`.
-3. Keep raw newsletters out of git (personal unsubscribe links, paid content); commit only the extracted data.
-4. Set `TWELVE_DATA_API_KEY` and `ANTHROPIC_API_KEY` as environment secrets, and allow `api.twelvedata.com`.
-5. Remove `rec-tracker/` from `claude-experiment`.
+Moved from `rsemin/claude-experiment` (folder `rec-tracker/`) on 10 Oct 2026, with its commit history. Raw newsletters go in `data/sources/`, which git ignores.
