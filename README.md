@@ -9,7 +9,29 @@ newsletter (.eml) ─► recommendations.json ─► returns.json ─► score.p
                       tracked ETFs, benchmark)                         "why" hypothesis)
 ```
 
-## Run
+## Service
+
+A small web service that stores newsletter calls and scores them against live Twelve Data prices.
+
+| Path | What it does |
+|---|---|
+| `GET /` | Lists newsletters |
+| `GET /newsletters/<id>` (`.json`) | Live report for one newsletter |
+| `POST /newsletters` | Adds a newsletter and its calls (JSON). Repeats return the existing one (200, not 201) |
+| `GET /health` | `ok` / `degraded` (prices unavailable) / `down` (database unreachable, 503). Includes the deployed commit |
+
+```bash
+python3 app.py                   # local, SQLite at data/local.db, http://localhost:8000
+python3 -m unittest -v           # tests; set DATABASE_URL to run them against Postgres
+```
+
+Every request logs one JSON line with a `request_id`, which is also returned in the `X-Request-Id` header.
+
+**Render settings:** Python web service; build `pip install -r requirements.txt`; start `python app.py`;
+health check path `/health`; env vars `DATABASE_URL` (internal URL of a Render Postgres) and `TWELVE_DATA_API_KEY`;
+auto-deploy "After CI checks pass".
+
+## Batch report (original)
 
 ```bash
 python3 score.py                 # table to stdout, writes out/report.html and out/results.json
