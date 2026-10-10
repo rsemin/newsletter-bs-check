@@ -135,11 +135,11 @@ def page(meta: dict, results: list[dict], explanations: dict, returns: dict) -> 
     )
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Recommendation Tracker</title><style>{CSS}</style></head><body><main>
-<h1>Did the 2026 bank calls work?</h1>
+<h1>Are these calls working?</h1>
 <p class="sub">{e(meta['publisher'])} · “{e(meta['title'])}” · published {e(meta['published'])} · scored on {e(returns['basis'])}</p>
 <div class="summary">{pills}</div>{cards}
 <div class="foot"><p>Excess = tracked return minus benchmark, shown as a range where sources disagree. A verdict is given only when the whole range is on one side of zero.
-Returns are measured from 31 Dec 2025, three trading days after publication. The horizon is all of 2026, so these are interim verdicts.</p>
+Returns are measured from the {e(meta.get('baseline', '2025-12-31'))} close. Verdicts are interim until the call's horizon ends.</p>
 <p>{e(returns['note'])}</p><ul>{sources}</ul></div></main></body></html>"""
 
 
